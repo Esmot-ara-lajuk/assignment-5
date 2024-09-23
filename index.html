@@ -30,19 +30,20 @@
                 <a class="text-xs font-bold flex items-center gap-2 lg:text-xl">
                     <div class="avatar">
                         <div class="w-6 rounded lg:w-10">
-                          <img src="./assets/logo.png" />
+                            <img src="./assets/logo.png" />
                         </div>
-                      </div>
-                    Donate Bangladesh</a>
+                    </div>
+                    Donate Bangladesh
+                </a>
             </div>
             <div class="navbar-end ">
                 <div class="flex items-center gap-2">
-                   <img class="w-5 lg:w-10" src="./assets/coin.png" alt="">
-                    <span class="text-xs lg:text-xl">5500 BDT</span>    
+                    <img class="w-5 lg:w-10" src="./assets/coin.png" alt="">
+                    <span class="text-xs lg:text-xl">5500 BDT</span>
                 </div>
             </div>
         </div>
-        
+
         <!-- End Navbar -->
         <!-- Button start -->
         <div class="flex justify-center gap-4 my-4">
@@ -51,10 +52,42 @@
         </div>
         <!-- Button End -->
     </header>
+
+    <!-- Main Part -->
+    <main class="w-10/12 mx-auto">
+        <!-- Donation For Noakhali -->
+        <div class="border-solid border-2 border-gray-200 rounded-lg p-4">
+            <div class="card lg:card-side bg-base-100 ">
+                <img src="./assets/noakhali.png" alt="Album" />
+                <div class="card-body">
+                    <button  class="btn w-3/12">
+                        <img src="./assets/coin.png" alt="">
+                        <span id="donate-money">
+                            10 
+                        </span>BDT</button>
+                    <h2 class="card-title">New album is released!</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.</p>
+                    
+                    <div class="card-actions">
+                        <textarea id="donate-input" placeholder="Write Donation Amount"
+                        class="textarea textarea-bordered textarea-xs w-full resize-none text-base"></textarea>
+                        <button id="donation-btn" class="btn btn-block bg-[#B4F461] font-bold text-[1rem]">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Donation For Feni -->
+         
+    </main>
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8c3dfc50a9.js" crossorigin="anonymous"></script>
     <!-- Java -->
     <script src="./js/index.js"></script>
+    <script src="./js/donation.js"></script>
 </body>
 
 </html>
