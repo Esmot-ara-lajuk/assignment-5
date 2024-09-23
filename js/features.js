@@ -6,3 +6,4 @@ document.getElementById('donation-history').addEventListener('click',function(){
     document.getElementById('history').classList.remove('hidden');
     document.getElementById('donation').classList.add('hidden');
 })
+
