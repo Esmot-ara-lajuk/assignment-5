@@ -3,3 +3,9 @@
   font-optical-sizing: auto;
 }
 
+.primary-button:hover{
+  background-color: #98d942;
+}
+.active{
+  background-color: #B4F461;
+}
