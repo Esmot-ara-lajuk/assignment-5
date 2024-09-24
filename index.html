@@ -51,7 +51,7 @@
             <button id="donation-history" class="btn primary-button">History</button>
         </div>
         <!-- Button End -->
-    </header>
+    </header> 
 
     <!-- Main Part -->
     <main class="w-10/12 mx-auto">
@@ -132,22 +132,39 @@
                         <div class="card-actions">
                             <textarea id="quota-donation-input" placeholder="Write Donation Amount"
                                 class="textarea textarea-bordered textarea-xs w-full resize-none"></textarea>
-                                <button id="quota-donation-btn"
-                                 class="btn btn-block bg-[#B4F461] font-bold text-[1rem]">Donate Now</button>
+                            <button id="quota-donation-btn"
+                                class="btn btn-block bg-[#B4F461] font-bold text-[1rem]">Donate Now</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-           
         </div>
-         <!-- History -->
+        <!-- History -->
 
-         <div>
-            <div id="history" class="hidden card bg-base-100 w-full shadow-xl p-10">
-                
+        <div>
+            <div id="history" class="hidden card bg-base-100 w-full p-10">
+
             </div>
         </div>
+        <!-- Modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        
+        <dialog id="my_modal_1" class="modal text-center">
+            <div class="modal-box">
+                <h3 class="text-lg font-bold">Congrats!</h3>
+                <p class="py-4">You Have donated for humankind.</p>
+                <h3 class="text-lg font-bold">Successfully.</h3>
+                <div class="modal-action">
+                    <form method="dialog" >
+                        <!-- if there is a button in form, it will close the modal -->
+                        <div class="card-actions">
+                            <button class="btn bg-[#B4F461]">Close</button>
+                          </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </main>
 
     <!-- Font Awesome -->
