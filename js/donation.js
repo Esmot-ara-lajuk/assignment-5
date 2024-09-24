@@ -8,6 +8,8 @@ document.getElementById('donation-btn').addEventListener('click', function(event
         const donateMoney = document.getElementById('donate-money').innerText;
 
         const totalMoney = document.getElementById('total-money').innerText;
+
+        const title =document.getElementById('card-title');
        
         const newDonateInput = parseFloat(donateInput);
         const newDonateMoney = parseFloat(donateMoney);
@@ -17,13 +19,16 @@ document.getElementById('donation-btn').addEventListener('click', function(event
 
         document.getElementById('donate-money').innerText = newDonation;
         document.getElementById('total-money').innerText =newRemainingBalance;
+
+        const p =document.createElement('p');
+        p.innerText = `${newDonateInput} Taka is donated for ${title}`;
+        console.log(p);
+        document.getElementById('history').appendChild(p);
+
+        alert('Congratulation, You Have successfully Donated.')
         
     }
     else(
         alert('Please Give A Valid Number. ')
-    )
-
-
-    
-    
+    )   
 })
