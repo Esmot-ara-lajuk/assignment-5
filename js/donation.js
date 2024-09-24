@@ -9,7 +9,9 @@ document.getElementById('donation-btn').addEventListener('click', function(event
 
         const totalMoney = document.getElementById('total-money').innerText;
 
-        const title =document.getElementById('card-title');
+        const title =document.getElementById('card-title').innerText;
+
+    
        
         const newDonateInput = parseFloat(donateInput);
         const newDonateMoney = parseFloat(donateMoney);
@@ -22,7 +24,6 @@ document.getElementById('donation-btn').addEventListener('click', function(event
 
         const p =document.createElement('p');
         p.innerText = `${newDonateInput} Taka is donated for ${title}`;
-        console.log(p);
         document.getElementById('history').appendChild(p);
 
         alert('Congratulation, You Have successfully Donated.')
